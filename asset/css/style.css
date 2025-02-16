@@ -2,11 +2,11 @@
 /* navbar */
 :root {
     --header-height: 3.5rem;
-    --black-color: #ff7900;
+    --black-color: hsl(28, 100%, 50%);
     --black-color-light: #ff9538;
     --black-color-lighten: #ffc693;
     --white-color: #000000;
-    --body-color: hsl(0, 0%, 0%);
+    --body-color: hsla(29, 88%, 38%, 0.904);
     --body-font: "Montserrat", sans-serif;
     --normal-font-size: .938rem;
     --font-regular: 400;
@@ -308,7 +308,10 @@
   /* navbar */
 
   /* main */
-  
+  .gambar{
+    width: 90%;
+    border-radius: 50px;
+  }
   /* main */
  
 
@@ -574,7 +577,7 @@
   }
 
   .jobs-title {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 150px;
     font: 600 48px/65px Asap, sans-serif;
@@ -589,7 +592,7 @@
 
   .job-card {
     border-radius: 16px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -601,7 +604,7 @@
   .company-info, .salary, .job-title, .job-card{
     display: flex;
     gap: 16px;
-    background-color: hsl(221, 49%, 16%);
+    background-color: hsl(32, 100%, 22%);
   }
 
   .company-logo {
