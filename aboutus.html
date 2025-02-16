@@ -3,9 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - Profile Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <style>
+        .background-clip{
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media (min-aspect-ratio: 16/9){
+    .background-clip{
+       width: 100%;
+       height: auto;
+    }
+ }
+
+ @media (max-aspect-ratio: 16/9){
+  .background-clip{
+     width: auto;
+     height: 100%;
+  }
+}
+
+  .main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    
+  }
+
+  .main-content a{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 2rem;
+    transition: 0,3s;
+    color: rgb(255, 255, 255);
+    letter-spacing: 20px;
+    font-weight: bolder;
+  }
+
+  .sec-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .sec-content {
+    max-width: 800px; 
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .sec-content h1{
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: justify;
+    padding-top: 0px;  
+  }
+
+  .sec-content p{
+    font-size: 1.2rem; 
+    line-height: 1.6;
+    color: #000000;
+    text-align: justify;
+    font-weight: bolder;
+  }
+  .nav_link a{
+    color: rgb(255, 255, 255);
+  }
+    </style>
+    
 </head>
 <body>
-    <h1>about us</h1>
+    <!-- navbar -->
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="index.html" class="nav__logo"> ELATION </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+    
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="index.html" class="nav__link">Home</a></li>
+    
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Pick Up <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+    
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="pricelist.html" class="dropdown__link">Price List</a>                          
+                       </li>
+    
+                       <li>
+                          <a href="aboutus.html" class="dropdown__link"> About Us </a>
+                       </li>
+                    </ul>
+                 </li>
+    
+                 <li class="dropdown__item">
+                  <div class="nav__link"><a href="contact.html" style="color: rgb(0, 0, 0);">Contact</a>  
+                  </div>
+               </li>
+              </ul>
+           </div>
+        </nav>
+     </header>
+    <!-- navbar -->
+
+     <!-- main -->
+    <main>
+        <div class="main-container">
+            <div class="main-content">
+                <div class="sec-container">
+                    <h1 style="color: #000000;">Tentang Kami</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+     <!-- main -->
+
+     <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Web Jual Beli Makanan</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pricelist.html">Price List</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://www.tiktok.com/@eelationnn?_t=ZS-8tqsmapufIY&_r=1" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a></li>
+                        <li><a href="https://x.com/ElationFood?t=ki_ufqSurfN66uZqpDfV3Q&s=09" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/elation.food?igsh=ajNnNnR5aDdyZzV2" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tugas Kewirausahaan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+      <!-- footer -->
+    <script src="script.js"></script>
 </body>
 </html>
